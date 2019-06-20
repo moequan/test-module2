@@ -1,0 +1,114 @@
+h1 {
+    text-align: center;
+}
+.blue {
+    color: blue;
+}
+.background {
+    width: 200px;
+    height: 200px;
+    background:url(/images/tree.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;  
+}
+.images {
+    display: inline-flex;
+    padding-top: 20px;
+}
+img[alt="Image 2"] {
+    padding: 15px;
+    border: 3px blue solid;
+}
+span:nth-child(2n+1) {
+    background-color: red;
+}
+.mediaquery {
+    background-color: green;
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+}
+.relative {
+    position: relative;
+    float: right;
+}
+.absolute {
+    position: absolute;
+    top: 235px;
+    right: 235px;  
+}
+.headerfixed {
+    position: fixed;
+    top: 0;
+    
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: inline-flex;     
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
+    border: 3px black solid;
+    grid-gap: 5px;
+
+}
+.wrapper div {
+    border: 2px black solid;  
+}
+.h3 {
+    color: green;
+    font-size: 32px;
+    font-family: monospace;
+}
+
+footer a:hover {
+    color: red;
+}
+footer a:visited {
+    color: orange;
+}
+.line li {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .mediaquery {
+      background-color: blue;
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .mediaquery {
+      background-color: yellow;
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .mediaquery {
+      background-color: red;
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .mediaquery {
+      background-color: purple;
+      width: 12rem;
+      height: 12rem;
+    }
+  }
